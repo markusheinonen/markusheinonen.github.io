@@ -8,7 +8,7 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 
 **Listen to big-shots**
-- Andrej Karpathy ["A Survival Guide to a PhD"](karpathy.github.io/2016/09/07/phd/)
+- Andrej Karpathy ["A Survival Guide to a PhD"](https://karpathy.github.io/2016/09/07/phd/)
 - Patrick Kidger ["Just know stuff"](https://kidger.site/thoughts/just-know-stuff/)
 - Bill Freeman ["How to do research"](https://people.csail.mit.edu/billf/publications/How_To_Do_Research.pdf)
 - Eamonn Keogh [“How to do good research"](https://www.cs.ucr.edu/~eamonn/Keogh_SIGKDD09_tutorial.pdf)
