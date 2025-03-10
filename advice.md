@@ -16,17 +16,23 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **The three pillars.** Machine learning is (1) conceptualising, (2) communicating, and (3) implementing; in this order of importance. Maximize your time spent on understanding the problem and the solution, and minimize your time spent coding. 
 
-**Become a coder wizard**. Learn to automate your workflows: code, experiments, logging, analysis, plotting, results. Make sure you can reconfig and restart your experiments in minutes on a GPU cluster. Make clean code and refactor often. Learn the latest tools, and exploit LLMs. Ask your collegues for their best practise. 
+**Become a coder wizard**. Learn to automate your workflows: code, experiments, logging, analysis, plotting, results. Make sure you can reconfig and restart your experiments in minutes on a GPU cluster. Make clean code and refactor often. Learn the latest tools, and exploit LLMs. Ask your collegues for their best practise. *One can't survive a PhD anymore without being at least an adequate ML engineer*.
 
-**Papers are not result tables**. Don't treat papers as benchmark competitions, but opportunities to identify a novel research problem, and understand and address its root causes. 
+**Papers are not result tables**. Don't treat papers as benchmark competitions, but opportunities to identify a novel research problems, and understand and address its root causes. 
 
 **Don’t chase SOTA**. Benchmark tables are not scientifically interesting: every year new methods come up and errors go down, brrrr. Instead aim at understanding the insight behind the contribution, or finding qualitative improvements, gaps in literature, or problems behind SOTA models. These often come from understanding related works and your model more in-depth.
 
-**Do your homework**. Don't make shortcuts, follow good ML principles and keep the quality bar high. Understand your own code and data, and competing methods, throughout.
+**Focus on problems**. Instead of finding solutions, focus on finding problems that are true, novel and significant. Find open problems by looking at what state-of-the-art can’t do, does poorly, or ignores.
 
-**Make a point**. Don't just present a method with marginal improvement in some table. What is your point? Why is this important and significant? What do we learn from this? Why should everyone start using this method? Answer the "so what?" proactively.
+**Conceptualise**. Refactor and rework your math and illustrations until they are so clear that an outsider could grasp the ideas at ease from a first glance. This often takes a long time, but will help make a best realisation of your contributions.
+
+**Make a point**. Don't just present a method with 2% better performance. So what? Why is this important and significant; what do we learn from this; why should everyone know this method?
+
+**Do your homework**. Follow good ML principles and keep the quality bar high. Don't make shortcuts. Understand your own code and data and competing methods throughout. Prepare for any question a collegue could have. 
 
 **Read**. You need to become world’s top expert in your phd topic during it. This means reading 100's of papers during your phd. Do not stop reading when you hit problems with your experiments, instead start reading even more: all ML problems have already been solved by someone in some paper (almost surely).
+
+**It's a marathon**. PhD is around 1000 working days. Remember to plan your research long-term. 
 
 **Write**. Formalize your ideas and models with precise and simple math in latex. Writing forces you to conceptualise and clarify your thoughts into hypotheses and claims. Aim at publication style. 
 
@@ -36,8 +42,6 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **Do project reviews**. Present your ideas, projects and code to your collegues and other phd students for honest feedback. You will learn a ton. 
 
-**Conceptualise**. Refactor and rework your math and illustrations until they are so clear that an outsider could grasp the ideas at ease from a first glance. This often takes a long time, but will help make a best realisation of your contributions.
-
 **Debug to understand**. When things are not working, visualise  everything: the loss, the optimisation, the network, the activations, the weights, the data, the likelihood, the gradients, the layers, etc.
 
 **Slow down to speed up**. Spend time understanding the problem you want to solve, and verify it exists. Formulate hypotheses on how to improve. Start from trivial baselines (random forest, linear regression), then simple neural netowrks, and finally SOTA baselines.  Run a sequence of more and more complex models, where ideally you change and quantify only one thing at a time. If you get stuck, avoid temptation to spend more time running experiments. Instead start reading, writing and discussing more to clarify that the problem is true, and solution is correct. See Andrej Karpathy's neural network [training recipe](http://karpathy.github.io/2019/04/25/recipe/).
@@ -45,8 +49,6 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 **Don't tell me it doesn't work**. Why doesn't it? What steps did you make to narrow down where the problem lies?
 
 **Break your model**. Stress-test your model until it breaks. What are its limits? This gives you direct avenue to making a second paper. Look at the [XAI question bank](https://arxiv.org/abs/2001.02478).
-
-**Focus on problems**. Instead of finding solutions, focus on finding problems that are true, novel and significant. Find open problems by looking at what state-of-the-art can’t do, does poorly, or ignores.
 
 **Become really good in one thing**. Most scientists know one thing very well, and apply it everywhere. For instance, differential geometry, Bayes, numerics, etc. This makes publishing papers efficient. 
 
@@ -64,7 +66,7 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **Attend a summer school**. Go to one on your first year.
 
-**Do an internship**. AI company internships or research lab visits are very useful. Most labs are happy to receive students, while company processes are more stochastic. Apply early and often. Three month internships strike a good balance.
+**Do an internship**. Company internships or research lab visits are very useful. Most labs are happy to receive students, while company processes are stochastic. Apply early and often. Three month internships strike a good balance.
 
 **Enjoy what you do**. Move towards projects that interest you. Finish your current project regardless. Students who deliver are more likely to get the cool projects in future. If your project is not progressing, take initiative. This is your phd thesis and career, you need to drive it forward.
 
@@ -78,13 +80,13 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **Study math**. You want to understand algebra, calculus, probability, statistics, measure theory, functional analysis, differential geometry, complex analysis, and optimisation. 
 
-**The story of a research project**. Science builds incrementally on top of earlier results. The earlier state-of-the-art is the bedrock, and your contribution sits on top. The steps are
+**The usual story**. Science builds incrementally on top of earlier results. The earlier state-of-the-art is the bedrock, and your contribution sits on top. The steps are
 1) Understand the research domain, and read all papers on it
 2) Be able to reproduce earlier, state-of-the-art results 
 3) Demonstrate a significant short-coming in state-of-the-art
 4) Find or adapt a known solution to the type of problem
 
-**Understand the foundations**. Courses, Wikipedia or blogs do not give deep understanding. Reading textbooks cover-to-cover is useful to obtain holistic knowledge. You want to understand mathematical foundations (Deisenroth), statistical learning (Gelman, Tibshirani), classic machine learning (Bishop, Murphy) and deep learning. Delving deeper into advanced topics is even better. If you only read one book, choose Bishop or Tibshirani. Great books are:
+**Read books**. Courses, Wikipedia or blogs do not give deep understanding. Reading textbooks cover-to-cover is useful to obtain holistic knowledge. You want to understand mathematical foundations (Deisenroth), statistical learning (Gelman, Tibshirani), classic machine learning (Bishop, Murphy) and deep learning. Delving deeper into advanced topics is even better. If you only read one book, choose Bishop or Tibshirani. Great books are:
 - On math: Deisenroth et al [“Mathematics for machine learning”](https://mml-book.github.io/)
 - On modern ML: Murphy [Probabilistic machine learning](https://probml.github.io/pml-book/) series, Bishops' [Deep Learning](https://www.bishopbook.com/)
 - On learning theory: Mohri et al [Foundations of machine learning](https://cs.nyu.edu/~mohri/mlbook/), Shalev-Shwartz et al [Understanding Machine Learning](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/)
