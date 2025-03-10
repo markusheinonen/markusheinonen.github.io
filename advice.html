@@ -1,90 +1,104 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<title>Markus Heinonen</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
-<style>
-	li + li {margin-top: 10px;}
-</style>
-
-<body style="font-family: Georgia, serif; font-size: 1.9em; margin-bottom: 40px; margin-left: 40px;">
-	<div class="container" style="margin-top: 60px">
-		<div class="row">
-			<div class="col-md-10">
-
-			<h2>Advice for machine learning PhD students</h2>
-
-			<p>Markus Heinonen, Aalto University, 2025</p>
-			
-			<p>Accompanying slideset is at <a href="https://users.aalto.fi/~heinom10/research-tips.pptx">users.aalto.fi/~heinom10/research-tips.pptx</a></p>
-			
-			<p><strong>The four pillars.</strong> Computational sciences are (1) reading, (2) writing, (3) communicating, and (4) coding; in this order of importance. Maximize your time spent on (1,2,3) to minimize time spent on (4). Your equations will live, your code will be forgotten. Machine learning is a science, not a benchmark competition.</p>
-
-			<p><strong>Yet, become a coder wiz.</strong> Make clean code and package it with good tutorials for the community in github. Use software to automate experiments, runs, results. Generate figures and results automatically. Ask your group members for their best practises on coding. Learn to distribute your code to a GPU cluster, and start re-runs in minutes.</p>
-			
-			<ul>
-			<li><strong>The four pillars.</strong> Computational sciences are (1) reading, (2) writing, (3) communicating, and (4) coding; in this order of importance. Maximize your time spent on (1,2,3) to minimize time spent on (4). Your equations will live, your code will be forgotten. Machine learning is a science, not a benchmark competition.</li>
-			<li><strong>Yet, become a coder wiz.</strong> Make clean code and package it with good tutorials for the community in github. Use software to automate experiments, runs, results. Generate figures and results automatically. Ask your group members for their best practises on coding. Learn to distribute your code to a GPU cluster, and start re-runs in minutes.</li>
-			<li><strong>Read.</strong> Topic papers, off-topic papers, landmark papers, textbooks. Learn by reading bad papers (ask your supervisor for review work). You need to become world’s top expert in your phd topic during the four years; plan accordingly and read continuously. Do not stop reading when you hit problems with your experiments, instead start reading even more: all ML problems have already been solved by someone in some paper (almost surely).</li>
-			<li><strong>Write.</strong> Formalize your ideas and models with precise math in latex. Writing forces you to conceptualise and clarify your thoughts into hypotheses and claims. Aim at publication style. If you hit a problem in your experiments, spend more time concretizing your assumptions, hypotheses, models, background, context, motivation, related works, etc.</li>
-			<li><strong>Communicate.</strong> Prepare presentation slides for every meeting, no matter how casual: Your collegues and supervisors will appreciate this. Aim at conference presentation quality. Practising presentations from the very beginning is helpful, since it forces to conceptualise your work. Remember that your supervisors work on 10 other projects and need a context switch for every meeting. Include a setting slide, and include a slide on why are we meeting. Minimize text in slides. What are the main points you need to convey? Great slides usually have 1 picture and around 10 words per slide (not 100).</li>
-			<li><strong>Conceptualise.</strong> Your math and illustrations reflect your conceptualisation of the model. If you have messy equations or figures, your thinking is still messy.</li>
-			<li><strong>Visualise to understand.</strong> Plot or draw everything about your model: the loss, the optimisation, the network, the activations, the weights, the data, the likelihood, the gradients, the layers, etc. You need to understand your model inside-out.</li>
-			<li><strong>Run experiments slowly.</strong> Do not rush into training the big network right away, instead take things slowly. You first need to study and understand the data, and then the problem (spend time on this). Identify the problem you want to solve in the baselines, and make sure it exists. Formulate hypotheses on how to improve. Run a sequence of more and more complex models. Start from linear regression, and build your way up. Try to change one thing at a time, and make sure you can quantify whether you improve or not. If you get stuck, avoid temptation to spend more time running experiments. Instead start reading, writing and discussing more to clarify that the problem is true, and solution is correct. Follow Karpathy’s neural network recipe <a href="http://karpathy.github.io/2019/04/25/recipe/">http://karpathy.github.io/2019/04/25/recipe/</a>.</li>
-			<li><strong>Don’t chase SOTA.</strong> Benchmark tables are not scientifically interesting: every year new methods crop up and errors go down brrrr. Instead aim at understanding the insight behind the contribution, or finding qualitative improvements, gaps in literature, or problems behind SOTA models. These often come from understanding related works and your model more in-depth.</li>
-			<li><strong>Break your model.</strong> Stress-test your model until it breaks. What are its limits? This gives you direct avenue to making a second paper. Look at the “XAI question bank” <a href="https://arxiv.org/abs/2001.02478">https://arxiv.org/abs/2001.02478</a> (fig1).</li>
-			<li><strong>Solutions are cheap, problems are gold.</strong> Instead of finding solutions, focus on finding problems that are true. Find open problems by looking at what state-of-the-art can’t do, does poorly, or ignores. Focus your time on understanding the problem, and the solution will emerge.</li>
-			<li><strong>Don’t hide from your supervisors</strong>. We love to talk about science, we love to be challenged and proven wrong, we love to hear about your ideas and progress. If you spend a week reading, don’t say that “I have no new results”; you have made lots of progress by learning new things. Actively ask for advice and feedback from your supervisor: meetings where only you talk benefit no one.</li>
-			<li><strong>Be honest.</strong> Tell your supervisor when you don’t understand something or when you are struggling. Don’t nod if you didn’t understand, ask for clarification. Implying otherwise makes it difficult to work with you. You don’t need to know everything. Don’t imply that you are doing fine when you aren’t. Project meetings are not an exam: you don’t need to pass. Instead, you should give transparent situation report such that people around you can help you. Don’t cancel meetings. Make meetings notes during the meeting, and send them to everyone immediately after the meeting.</li>
-			<li><strong>Network and socialise</strong>. Attend a top conference in your field (NeurIPS/ICML/ICLR/etc) every year, even if you have no paper. First time you will know no one, but next time you will. Workshop papers and posters are great way to get your foot in to the community. Attend journal clubs: establish one if none exists in your school. Make sure you have online presence (website, blog or github) so that collegues and bigshots can find you. If you have no papers yet, having a technical blog is a good way to show your expertise.</li>
-			<li><strong>Follow the domain.</strong> Be aware of all highlight papers in top conferences each year to see where the field is moving. Follow what your competitors are publishing. Use Google Scholar to follow seminal papers and their forward citations. Follow machine learning social media.</li>
-			<li><strong>Attend a summer school.</strong> Go to one on your first year.</li>
-			<li><strong>Love what you do</strong>. Move towards projects that interest you. Finish your current project regardless. Students who deliver are more likely to get the cool projects in future. If your project is not progressing, take initiative. This is your phd thesis and career, you need to drive it forward.</li>
-			<li><strong>If you are stuck</strong>. Slow down, rethink what you are doing, and discuss with your collegues (you will notice that people love to give advice!): what problem are you solving and is it the right problem? What is your goal again? If the problem is right, is the solution?</li>
-			<li><strong>Organize your time.</strong> Make sure to spend ~20% of your time reading and another ~20% writing your ideas down. Do not slip from this. Keep (i) a research diary and maintain (ii) a literature review and (iii) technical report on your models. Share these as a non-changing single-click url for your supervisors.</li>
-			<li><strong>Queue your work.</strong> Research is a sequence of small tasks. Treat it as FIFO queue: have a single active task at a time and close and conclude all previous tasks. Do not multitask. Do not leave unfinished tasks. If your backlog is growing, stop, and resolve them first.</li>
-			<li><strong>Study math</strong>. You want to understand linear algebra and vector calculus, probability and statistics and Bayes, differential and integral calculus. You will also benefit from measure theory, functional analysis, topology, differential geometry and complex analysis.</li>
-			<li><strong>The story of a research project.</strong> Science is built on top of earlier work, and all science is incremental, even the ones that say they are not. The earlier state-of-the-art is the bedrock, and your contribution is the house you build on top of it. The steps are<ol>
-			<li>Understand the research domain on high level <em>(don’t get scooped)</em></li>
-			<li>Be able to reproduce earlier, state-of-the-art results <em>(find the bedrock)</em></li>
-			<li>Demonstrate a significant short-coming in state-of-the-art <em>(find a crack)</em></li>
-			<li>Find or adapt a known solution to the problem type <em>(fill the crack)</em> </li>
-			<li>Verify and illustrate the solution</li>
-			</ol>
-			</li>
-			<li><strong>Understand the foundations.</strong> Courses, Wikipedia or blogs do not give deep understanding. Read textbooks cover-to-cover: your phd will become easier. You want to understand mathematical foundations (Deisenroth), statistical learning (Gelman, Tibshirani), classic machine learning (Bishop, Murphy) and deep learning (Goodfellow). Delving deeper into advanced topics is even better. If you only read one book, choose Murphy. Great books are:<ul>
-			<li>On math: Deisenroth et al “<em>Mathematics for machine learning”</em> and <em>&quot;Matrix Cookbook”</em></li>
-			<li>On probabilistic learning: Murphy <em>“Probabilistic machine learning</em>” series, Bishop “<em>Pattern recognition and machine learning</em>”</li>
-			<li>On learning theory: Mohri et al <em>“Foundations of machine learning”</em>, Swartz et al <em>“Understanding Machine Learning&quot;</em></li>
-			<li>On statistical learning: Tibshirani et al <em>“Elements of Statistical Learning&quot;</em></li>
-			<li>On Bayesian modelling: Gelman et al <em>“Bayesian Data Analysis</em>&quot;</li>
-			<li>On deep learning: Goodfellow et al “<em>Deep learning</em>&quot;</li>
-			<li>On generative models: Tomczak “<em>Deep Generative Models”</em></li>
-			<li>On information theory: MacKay <em>“Information theory, Inference and Learning Algorithms&quot;</em></li>
-			</ul>
-			</li>
-			<li><strong>Listen to big-shots</strong><ul>
-			<li>Andrej Karpathy &quot;A Survival Guide to a PhD&quot; <a href="http://karpathy.github.io/2016/09/07/phd/">karpathy.github.io/2016/09/07/phd/</a></li>
-			<li>Bill Freeman “How to do research&quot; <a href="http://people.csail.mit.edu/billf/publications/How_To_Do_Research.pdf">people.csail.mit.edu/billf/publications/How_To_Do_Research.pdf</a></li>
-			<li>Eamonn Keogh “How to do good research&quot; <a href="http://www.cs.ucr.edu/~eamonn/Keogh_SIGKDD09_tutorial.pdf">www.cs.ucr.edu/~eamonn/Keogh_SIGKDD09_tutorial.pdf</a></li>
-			<li><a href="https://agents.inf.ed.ac.uk/phd-handbook/">https://agents.inf.ed.ac.uk/phd-handbook/</a></li>
-			</ul>
-			</li>
-			</ul>
-
-			</div>
-		</div>
-	</div>
-
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="advice-for-machine-learning-phd-students">Advice for machine learning PhD students</h2>
+<p><a href="https://markusheinonen.github.io/">Markus Heinonen</a>, Aalto University, 2025</p>
+<p>Here’s what I learned doing a machine learning PhD and supervising many others.</p>
+<p>Accompanying <a href="https://markusheinonen.github.io/research-tips.pptx">slideset</a></p>
+<p><strong>Listen to big-shots</strong></p>
+<ul>
+<li>
+<p>Andrej Karpathy <a href="karpathy.github.io/2016/09/07/phd/">“A Survival Guide to a PhD”</a></p>
+</li>
+<li>
+<p>Patrick Kidger <a href="https://kidger.site/thoughts/just-know-stuff/">“Just know stuff”</a></p>
+</li>
+<li>
+<p>Bill Freeman <a href="people.csail.mit.edu/billf/publications/How_To_Do_Research.pdf">“How to do research”</a></p>
+</li>
+<li>
+<p>Eamonn Keogh <a href="www.cs.ucr.edu/~eamonn/Keogh_SIGKDD09_tutorial.pdf">“How to do good research"</a></p>
+</li>
+<li>
+<p>Stefano Albrecht <a href="https://agents-lab.org/phd-handbook/">PhD Handbook</a></p>
+</li>
+</ul>
+<p><strong>The three pillars.</strong> Machine learning is (1) conceptualising, (2) communicating, and (3) implementing; in this order of importance. Maximize your time spent on understanding the problem and the solution, and minimize your time spent coding.</p>
+<p><strong>Papers are not result tables</strong>. Don’t treat papers as benchmark competitions, but opportunities to identify a novel research problem, and understand and address its root causes.</p>
+<p><strong>Become a coder wizard</strong>. Learn to automate your workflows: code, experiments, logging, analysis, plotting, results. Make sure you can reconfig and restart your experiments in minutes on a GPU cluster. Make clean code and refactor often. Learn the latest tools, and exploit LLMs. Ask your collegues for their best practise.</p>
+<p><strong>Read</strong>. You need to become world’s top expert in your phd topic during it. This means reading 100’s of papers during your phd. Do not stop reading when you hit problems with your experiments, instead start reading even more: all ML problems have already been solved by someone in some paper (almost surely).</p>
+<p><strong>Write</strong>. Formalize your ideas and models with precise and simple math in latex. Writing forces you to conceptualise and clarify your thoughts into hypotheses and claims. Aim at publication style.</p>
+<p><strong>Communicate</strong>. Prepare presentation slides for every meeting, no matter how casual: Your audience will appreciate this. Aim at conference presentation quality. Practising presentations from the very beginning is helpful, since it forces to conceptualise your work. Remember that your supervisors work on a dozen other projects and need a context switch for every meeting. Include a setting slide, and include a slide on why are we meeting. Minimize text in slides. What are the main points you need to convey? Great slides usually have 1 picture and around 10 words per slide (not 100). Make meetings notes during the meeting, and send them to everyone immediately after the meeting.</p>
+<p><strong>Do project reviews</strong>. Present your ideas, projects and code to your collegues and other phd students for honest feedback. You will learn a ton.</p>
+<p><strong>Conceptualise</strong>. Your math and illustrations reflect your conceptualisation of the model. If you have messy equations or figures, your thinking is still messy.</p>
+<p>Visualise to understand. Plot or draw everything about your model: the loss, the optimisation, the network, the activations, the weights, the data, the likelihood, the gradients, the layers, etc. You need to understand your model inside-out.</p>
+<p><strong>Run experiments slowly</strong>. Do not rush into training the big network right away, instead take things slowly. You first need to study and understand the data, and then the problem (spend time on this). Identify the problem you want to solve in the baselines, and make sure it exists. Formulate hypotheses on how to improve. Run a sequence of more and more complex models. Start from linear regression, and build your way up. Try to change one thing at a time, and make sure you can quantify whether you improve or not. If you get stuck, avoid temptation to spend more time running experiments. Instead start reading, writing and discussing more to clarify that the problem is true, and solution is correct. See Andrej Karpathy’s neural network <a href="http://karpathy.github.io/2019/04/25/recipe/">training recipe</a>.</p>
+<p><strong>Don’t chase SOTA</strong>. Benchmark tables are not scientifically interesting: every year new methods come up and errors go down, brrrr. Instead aim at understanding the insight behind the contribution, or finding qualitative improvements, gaps in literature, or problems behind SOTA models. These often come from understanding related works and your model more in-depth.</p>
+<p><strong>Break your model</strong>. Stress-test your model until it breaks. What are its limits? This gives you direct avenue to making a second paper. Look at the <a href="https://arxiv.org/abs/2001.02478">XAI question bank</a>.</p>
+<p><strong>Focus on problems</strong>. Instead of finding solutions, focus on finding problems that are true, novel and significant. Find open problems by looking at what state-of-the-art can’t do, does poorly, or ignores. Focus your time on understanding the problem, and the solution will emerge.</p>
+<p><strong>Become really good in one thing</strong>. Most scientists know one thing very well, and apply it everywhere. For instance, differential geometry, Bayes, optimisation, Fourier analysis, etc. This makes publishing papers effortless.</p>
+<p><strong>Don’t hide from your supervisors</strong>. We love to talk about science, we love to be challenged and proven wrong, we love to hear about your ideas and progress. If you spend a week reading, don’t say that “I have no new results”; you have made lots of progress by learning new things. Actively ask for advice and feedback from your supervisor: meetings where only you talk benefit no one. Insist on regular update meetings, the more often the better.</p>
+<p><strong>Be honest</strong>. Tell your supervisor when you don’t understand something or when you are struggling. Don’t nod if you didn’t understand, ask for clarification. Implying otherwise makes it difficult to work with you. Don’t imply that you are doing fine when you aren’t. Project meetings are not an exam: you don’t need to pass. Instead, you should give transparent situation report such that people around you can help you. Don’t cancel meetings.</p>
+<p><strong>Network and socialise</strong>. Attend a top conference in your field (NeurIPS/ICML/ICLR/etc) every year, even if you have no paper. First time you will know no one, but next time you will. Workshops are a great way to get your foot in, and practise presenting. Attend journal clubs: establish one if none exists in your school.</p>
+<p><strong>Be visible</strong>. Make a website of yourself so that collegues and bigshots can find you. If you have no papers yet, having a technical blog is a good way to show your expertise. Make a website for each paper you make (a good <a href="https://www.guandaoyang.com/PointFlow/">example</a>).</p>
+<p><strong>Make papers reader-friendly.</strong> Write in a way that is accessible to a non-expert reader. Be explicit and precise. Use illustrations, colors and short paragraphs. Shorten as much as you can. Ask LLMs to improve the language.</p>
+<p><strong>Follow the domain</strong>. Check all orals and keynotes of all top ML conferences, even if they don’t relate to your research. This tells where the field is moving, and you always get some useful ideas. Follow what your competitors are publishing. Use Google Scholar to follow seminal papers and their forward citations.</p>
+<p><strong>Attend a summer school</strong>. Go to one on your first year.</p>
+<p><strong>Do an internship</strong>. AI company internships or research lab visits are very useful. Most labs are happy to receive students, while company processes are more stochastic. Apply early and often. Three month internships strike a good balance.</p>
+<p><strong>Enjoy what you do</strong>. Move towards projects that interest you. Finish your current project regardless. Students who deliver are more likely to get the cool projects in future. If your project is not progressing, take initiative. This is your phd thesis and career, you need to drive it forward.</p>
+<p><strong>If you are stuck</strong>. Slow down, rethink what you are doing, and discuss with your collegues (you will notice that people love to give advice!): what problem are you solving and is it the right problem? What is your goal again? If the problem is right, is the solution?</p>
+<p><strong>Organize your time</strong>. Make sure to spend at least 20% of your time reading. Do not slip from this. Keep (i) a research diary and maintain (ii) a literature review and (iii) technical report on your models. Share these as a non-changing single-click url for your supervisors.</p>
+<p><strong>Queue your work</strong>. Research is a sequence of small tasks. Treat it as FIFO queue: have a single active task at a time, and conclude it before you move forward. Do not multitask. Do not leave unfinished tasks. If your backlog is growing, stop, and resolve them first.</p>
+<p><strong>Calendar, not TODO lists</strong>. Don’t make TODO lists. They expand until they become too oppressing, and you restart. Instead, allocate time for tasks on your calendar. Follow <a href="https://deviparikh.substack.com/p/calendar-in-stead-of-to-do-lists-9ada86a512dd">Devi Parikh’s advice</a>.</p>
+<p><strong>Study math</strong>. You want to understand algebra, calculus, probability, statistics, measure theory, functional analysis, differential geometry, complex analysis, and optimisation.</p>
+<p><strong>The story of a research project</strong>. Science builds incrementally on top of earlier results. The earlier state-of-the-art is the bedrock, and your contribution sits on top. The steps are</p>
+<ol>
+<li>
+<p>Understand the research domain, and read all papers on it</p>
+</li>
+<li>
+<p>Be able to reproduce earlier, state-of-the-art results</p>
+</li>
+<li>
+<p>Demonstrate a significant short-coming in state-of-the-art</p>
+</li>
+<li>
+<p>Find or adapt a known solution to the type of problem</p>
+</li>
+</ol>
+<p><strong>Understand the foundations</strong>. Courses, Wikipedia or blogs do not give deep understanding. Reading textbooks cover-to-cover is useful to obtain holistic knowledge. You want to understand mathematical foundations (Deisenroth), statistical learning (Gelman, Tibshirani), classic machine learning (Bishop, Murphy) and deep learning. Delving deeper into advanced topics is even better. If you only read one book, choose Bishop or Tibshirani. Great books are:</p>
+<ul>
+<li>
+<p>On math: Deisenroth et al <a href="https://mml-book.github.io/">“Mathematics for machine learning”</a></p>
+</li>
+<li>
+<p>On modern ML: Murphy <a href="https://probml.github.io/pml-book/">Probabilistic machine learning</a> series, Bishops’ <a href="https://www.bishopbook.com/">Deep Learning</a></p>
+</li>
+<li>
+<p>On learning theory: Mohri et al <a href="https://cs.nyu.edu/~mohri/mlbook/">Foundations of machine learning</a>, Shalev-Shwartz et al <a href="https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/">Understanding Machine Learning</a></p>
+</li>
+<li>
+<p>On statistical learning: Tibshirani et al <a href="https://hastie.su.domains/ElemStatLearn/">Elements of Statistical Learning</a></p>
+</li>
+<li>
+<p>On Bayesian modelling: Gelman et al <a href="https://sites.stat.columbia.edu/gelman/book/">Bayesian Data Analysis</a></p>
+</li>
+<li>
+<p>On generative models: Tomczak <a href="https://jmtomczak.github.io/dgm_book.html">Deep Generative Models</a></p>
+</li>
+<li>
+<p>On information theory: MacKay <a href="https://www.inference.org.uk/mackay/itila/book.html">Information theory, Inference and Learning Algorithms</a></p>
+</li>
+</ul>
+</div>
 </body>
+
 </html>
