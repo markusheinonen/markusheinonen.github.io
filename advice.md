@@ -16,11 +16,15 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **The three pillars.** Machine learning is (1) conceptualising, (2) communicating, and (3) implementing; in this order of importance. Maximize your time spent on understanding the problem and the solution, and minimize your time spent coding. 
 
-**Papers are not result tables**. Don't treat papers as benchmark competitions, but opportunities to identify a novel research problem, and understand and address its root causes.
+**Become a coder wizard**. Learn to automate your workflows: code, experiments, logging, analysis, plotting, results. Make sure you can reconfig and restart your experiments in minutes on a GPU cluster. Make clean code and refactor often. Learn the latest tools, and exploit LLMs. Ask your collegues for their best practise. 
+
+**Papers are not result tables**. Don't treat papers as benchmark competitions, but opportunities to identify a novel research problem, and understand and address its root causes. 
 
 **Don’t chase SOTA**. Benchmark tables are not scientifically interesting: every year new methods come up and errors go down, brrrr. Instead aim at understanding the insight behind the contribution, or finding qualitative improvements, gaps in literature, or problems behind SOTA models. These often come from understanding related works and your model more in-depth.
 
-**Become a coder wizard**. Learn to automate your workflows: code, experiments, logging, analysis, plotting, results. Make sure you can reconfig and restart your experiments in minutes on a GPU cluster. Make clean code and refactor often. Learn the latest tools, and exploit LLMs. Ask your collegues for their best practise. 
+**Do your homework**. Don't make shortcuts, follow good ML principles and keep the quality bar high. Understand your own code and data, and competing methods, throughout.
+
+**Make a point**. Don't just present a method with marginal improvement in some table. What is your point? Why is this important and significant? What do we learn from this? Why should everyone start using this method? Answer the "so what?" proactively.
 
 **Read**. You need to become world’s top expert in your phd topic during it. This means reading 100's of papers during your phd. Do not stop reading when you hit problems with your experiments, instead start reading even more: all ML problems have already been solved by someone in some paper (almost surely).
 
@@ -28,13 +32,17 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **Communicate**. Prepare presentation slides for every meeting, no matter how casual: Your audience will appreciate this. Aim at conference presentation quality. Practising presentations from the very beginning is helpful, since it forces to conceptualise your work. Remember that your supervisors work on a dozen other projects and need a context switch for every meeting. Include a setting slide, and include a slide on why are we meeting. Minimize text in slides. What are the main points you need to convey? Great slides usually have 1 picture and around 10 words per slide (not 100). Make meetings notes during the meeting, and send them to everyone immediately after the meeting.
 
+**How to give a talk**. Math-heavy talks benefit no one: the experts in audience already know your work, and rest don't care. Talks should be aimed at a non-expert audience who might not even know what the domain is. Spend third of your time giving an overview to the domain: why is it important and cool? Spend rest on the specific problem, and your high-level ideas. Remember that an average listener has mental budget for max 5 equations, and will stop listening if you present more. 
+
 **Do project reviews**. Present your ideas, projects and code to your collegues and other phd students for honest feedback. You will learn a ton. 
 
 **Conceptualise**. Refactor and rework your math and illustrations until they are so clear that an outsider could grasp the ideas at ease from a first glance. This often takes a long time, but will help make a best realisation of your contributions.
 
 **Debug to understand**. When things are not working, visualise  everything: the loss, the optimisation, the network, the activations, the weights, the data, the likelihood, the gradients, the layers, etc.
 
-**Run experiments slowly**. Spend time understanding the problem you want to solve, and verify it exists. Formulate hypotheses on how to improve. Start from trivial baselines (random forest, linear regression), then simple neural netowrks, and finally SOTA baselines.  Run a sequence of more and more complex models, where ideally you change and quantify only one thing at a time. If you get stuck, avoid temptation to spend more time running experiments. Instead start reading, writing and discussing more to clarify that the problem is true, and solution is correct. See Andrej Karpathy's neural network [training recipe](http://karpathy.github.io/2019/04/25/recipe/).
+**Slow down to speed up**. Spend time understanding the problem you want to solve, and verify it exists. Formulate hypotheses on how to improve. Start from trivial baselines (random forest, linear regression), then simple neural netowrks, and finally SOTA baselines.  Run a sequence of more and more complex models, where ideally you change and quantify only one thing at a time. If you get stuck, avoid temptation to spend more time running experiments. Instead start reading, writing and discussing more to clarify that the problem is true, and solution is correct. See Andrej Karpathy's neural network [training recipe](http://karpathy.github.io/2019/04/25/recipe/).
+
+**Don't tell me it doesn't work**. Why doesn't it? What steps did you make to narrow down where the problem lies?
 
 **Break your model**. Stress-test your model until it breaks. What are its limits? This gives you direct avenue to making a second paper. Look at the [XAI question bank](https://arxiv.org/abs/2001.02478).
 
@@ -50,7 +58,7 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **Be visible**. Have a website for collegues and bigshots to find you. If you have no papers yet, having a technical blog is a good way to show your expertise. Make a website for each paper you make (a good [example](https://www.guandaoyang.com/PointFlow/)).
 
-**Make papers reader-friendly.** Write in a way that is accessible to a non-expert reader. Be explicit and precise. Use illustrations, colors and short paragraphs. Shorten as much as you can. Ask LLMs to improve the language. 
+**Make papers reader-friendly.** Write in a way that is accessible to a non-expert reader. Be explicit and precise. Use illustrations, colors and short paragraphs. Shorten as much as you can. Ask LLMs to improve the language. Write simple papers. If you can't, the idea is not yet ready from the oven.
 
 **Follow the domain**. Check all orals and keynotes of all top ML conferences, even if they don't relate to your research. This tells where the field is moving, and you always get some useful ideas. Follow what your competitors are publishing. Use Google Scholar to follow seminal papers and their forward citations. 
 
