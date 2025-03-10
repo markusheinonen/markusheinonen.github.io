@@ -29,7 +29,8 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 **Do project reviews**. Present your ideas, projects and code to your collegues and other phd students for honest feedback. You will learn a ton. 
 
 **Conceptualise**. Your math and illustrations reflect your conceptualisation of the model. If you have messy equations or figures, your thinking is still messy.
-Visualise to understand. Plot or draw everything about your model: the loss, the optimisation, the network, the activations, the weights, the data, the likelihood, the gradients, the layers, etc. You need to understand your model inside-out.
+
+**Visualise to understand**. Plot or draw everything about your model: the loss, the optimisation, the network, the activations, the weights, the data, the likelihood, the gradients, the layers, etc. You need to understand your model inside-out.
 
 **Run experiments slowly**. Do not rush into training the big network right away, instead take things slowly. You first need to study and understand the data, and then the problem (spend time on this). Identify the problem you want to solve in the baselines, and make sure it exists. Formulate hypotheses on how to improve. Run a sequence of more and more complex models. Start from linear regression, and build your way up. Try to change one thing at a time, and make sure you can quantify whether you improve or not. If you get stuck, avoid temptation to spend more time running experiments. Instead start reading, writing and discussing more to clarify that the problem is true, and solution is correct. See Andrej Karpathy's neural network [training recipe](http://karpathy.github.io/2019/04/25/recipe/).
 
