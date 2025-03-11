@@ -1,7 +1,7 @@
 
 ## Advice for machine learning PhD students
 
-[Markus Heinonen](https://markusheinonen.github.io/), Aalto University, March 2025 
+by [Markus Heinonen](https://markusheinonen.github.io/), Aalto University, March 2025 
 
 Here's what I learned doing a machine learning PhD and supervising many others.
 
@@ -20,7 +20,7 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **Become a coder wiz**. Learn to automate your workflows: code, experiments, runs, logging, analysis, plotting, results. Make sure you can reconfig and restart your experiments in minutes on a GPU cluster. Make clean code and refactor often. Learn the latest tools, and exploit LLMs. Ask your collegues for their best practises. **One can't survive a PhD anymore without being an adequate ML engineer**. This can easily accelerate research output 10x.
 
-**SOTA is not science**. Paper's should not be treated as benchmark competitions, but opportunities to identify novel research problems and understand and address their root causes. Benchmark tables are not scientifically interesting: every year new methods come up and errors go down, brrrr. Instead aim at understanding the insight behind the contributions, or finding qualitative improvements, gaps in literature, or problems behind SOTA models. These often come from understanding related works and your model more in-depth. By solving true open problems one obtains SOTA as a side-effect.
+**Science is not SOTA**. Paper's should not be treated as benchmark competitions, but opportunities to identify novel research problems and understand and address their root causes. Benchmark tables are not scientifically interesting: every year new methods come up and errors go down, brrrr. Instead aim at understanding the insight behind the contributions, or finding qualitative improvements, gaps in literature, or problems behind SOTA models. These often come from understanding related works and your model more in-depth. By solving true open problems one obtains SOTA as a side-effect.
 
 **Focus on problems**. Instead of finding solutions, focus on finding problems that are true, novel and significant. Find open problems by looking at what state-of-the-art can’t do, does poorly, or ignores.
 
@@ -58,7 +58,7 @@ Accompanying [slideset](https://markusheinonen.github.io/research-tips.pptx)
 
 **Write simple papers.** Write in a way that is accessible to a non-expert reader. Use illustrations, colors and short paragraphs. Use LLMs to polish the language. Shorten, distill and simplify as much as you can. If you can't write a simple paper, the idea is not yet ready from the oven. Be explicit and use precise math. Organise internal mock peer-review with other students.
 
-**Go to the point** Write what you want to say, and nothing more. For instance, a short introduction of 2 paragraphs is often ideal. Bullet your contributions. Related works often works best at the end of the paper. Make a comparison table wrt competing methods. Add conclusions in boxes. Color equations. Use \underbrace copiously. Put math in full lines. Captions should have two phrases: conclusion and description. Make figures and tables self-contained. Annotate everything about figures. Figure font size should not decrease from paper. Include standard deviations. Put full math derivations in appendix.
+**Go to the point**. Write what you want to say, and nothing more. For instance, a short introduction of 2 paragraphs is often ideal. Bullet your contributions. Related works often works best at the end of the paper. Make a comparison table wrt competing methods. Add conclusions in boxes. Color equations. Use \underbrace copiously. Put math in full lines. Captions should have two phrases: conclusion and description. Make figures and tables self-contained. Annotate everything about figures. Figure font size should not decrease from paper. Include standard deviations. Put full math derivations in appendix.
 
 **Follow the domain**. Check all orals and keynotes of all top ML conferences, even if they don't relate to your research. This tells where the field is moving, and you always get some useful ideas. Follow what your competitors are publishing. Use Google Scholar to follow seminal papers and their forward citations. 
 
